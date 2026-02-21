@@ -1,0 +1,168 @@
+User@DESKTOP-G635RKF MINGW64 /d/devops/daws-88s/repos/terraform/loop (main)
+$ terraform plan
+aws_security_group.allow_tls: Refreshing state... [id=sg-092506fc134f48ce1]
+aws_instance.example[5]: Refreshing state... [id=i-0ce21d4eaa8c22293]
+aws_instance.example[2]: Refreshing state... [id=i-043d60a13a504ad6c]
+aws_instance.example[7]: Refreshing state... [id=i-08339a4c7166df4f6]
+aws_instance.example[4]: Refreshing state... [id=i-01996f3472a7b522b]
+aws_instance.example[0]: Refreshing state... [id=i-0bbeb9bb53f6b7af9]
+aws_instance.example[3]: Refreshing state... [id=i-0f931609b7f641fa6]
+aws_instance.example[8]: Refreshing state... [id=i-0d0a898a6ce3311b3]
+aws_instance.example[1]: Refreshing state... [id=i-09f4f1d56bc57c881]
+aws_instance.example[6]: Refreshing state... [id=i-0e7eefd2738c01cdf]
+aws_instance.example[9]: Refreshing state... [id=i-02c05b631278325ed]
+
+Terraform used the selected providers to generate the following execution plan. Resource actions are indicated with the following symbols:
+  + create
+
+Terraform will perform the following actions:
+
+  # aws_route53_record.www[0] will be created
+  + resource "aws_route53_record" "www" {
+      + allow_overwrite = (known after apply)
+      + fqdn            = (known after apply)
+      + id              = (known after apply)
+      + name            = "mongodb.pugasaha.online"
+      + records         = [
+          + "172.31.21.203",
+        ]
+      + ttl             = 1
+      + type            = "A"
+      + zone_id         = "Z0031972RV2QBNE1P8DT"
+    }
+
+  # aws_route53_record.www[1] will be created
+  + resource "aws_route53_record" "www" {
+      + allow_overwrite = (known after apply)
+      + fqdn            = (known after apply)
+      + id              = (known after apply)
+      + name            = "catalogue.pugasaha.online"
+      + records         = [
+          + "172.31.24.61",
+        ]
+      + ttl             = 1
+      + type            = "A"
+      + zone_id         = "Z0031972RV2QBNE1P8DT"
+    }
+
+  # aws_route53_record.www[2] will be created
+  + resource "aws_route53_record" "www" {
+      + allow_overwrite = (known after apply)
+      + fqdn            = (known after apply)
+      + id              = (known after apply)
+      + name            = "redis.pugasaha.online"
+      + records         = [
+          + "172.31.30.147",
+        ]
+      + ttl             = 1
+      + type            = "A"
+      + zone_id         = "Z0031972RV2QBNE1P8DT"
+    }
+
+  # aws_route53_record.www[3] will be created
+  + resource "aws_route53_record" "www" {
+      + allow_overwrite = (known after apply)
+      + fqdn            = (known after apply)
+      + id              = (known after apply)
+      + name            = "user.pugasaha.online"
+      + records         = [
+          + "172.31.23.187",
+        ]
+      + ttl             = 1
+      + type            = "A"
+      + zone_id         = "Z0031972RV2QBNE1P8DT"
+    }
+
+  # aws_route53_record.www[4] will be created
+  + resource "aws_route53_record" "www" {
+      + allow_overwrite = (known after apply)
+      + fqdn            = (known after apply)
+      + id              = (known after apply)
+      + name            = "cart.pugasaha.online"
+      + records         = [
+          + "172.31.19.149",
+        ]
+      + ttl             = 1
+      + type            = "A"
+      + zone_id         = "Z0031972RV2QBNE1P8DT"
+    }
+
+  # aws_route53_record.www[5] will be created
+  + resource "aws_route53_record" "www" {
+      + allow_overwrite = (known after apply)
+      + fqdn            = (known after apply)
+      + id              = (known after apply)
+      + name            = "mysql.pugasaha.online"
+      + records         = [
+          + "172.31.21.113",
+        ]
+      + ttl             = 1
+      + type            = "A"
+      + zone_id         = "Z0031972RV2QBNE1P8DT"
+    }
+
+  # aws_route53_record.www[6] will be created
+  + resource "aws_route53_record" "www" {
+      + allow_overwrite = (known after apply)
+      + fqdn            = (known after apply)
+      + id              = (known after apply)
+      + name            = "shipping.pugasaha.online"
+      + records         = [
+          + "172.31.24.154",
+        ]
+      + ttl             = 1
+      + type            = "A"
+      + zone_id         = "Z0031972RV2QBNE1P8DT"
+    }
+
+  # aws_route53_record.www[7] will be created
+  + resource "aws_route53_record" "www" {
+      + allow_overwrite = (known after apply)
+      + fqdn            = (known after apply)
+      + id              = (known after apply)
+      + name            = "rabbitmq.pugasaha.online"
+      + records         = [
+          + "172.31.24.123",
+        ]
+      + ttl             = 1
+      + type            = "A"
+      + zone_id         = "Z0031972RV2QBNE1P8DT"
+    }
+
+  # aws_route53_record.www[8] will be created
+  + resource "aws_route53_record" "www" {
+      + allow_overwrite = (known after apply)
+      + fqdn            = (known after apply)
+      + id              = (known after apply)
+      + name            = "payment.pugasaha.online"
+      + records         = [
+          + "172.31.23.130",
+        ]
+      + ttl             = 1
+      + type            = "A"
+      + zone_id         = "Z0031972RV2QBNE1P8DT"
+    }
+
+  # aws_route53_record.www[9] will be created
+  + resource "aws_route53_record" "www" {
+      + allow_overwrite = (known after apply)
+      + fqdn            = (known after apply)
+      + id              = (known after apply)
+      + name            = "frontend.pugasaha.online"
+      + records         = [
+          + "172.31.20.200",
+        ]
+      + ttl             = 1
+      + type            = "A"
+      + zone_id         = "Z0031972RV2QBNE1P8DT"
+    }
+
+Plan: 10 to add, 0 to change, 0 to destroy.
+
+───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+Note: You didn't use the -out option to save this plan, so Terraform can't guarantee to take exactly these actions if you run "terraform apply" now.
+
+User@DESKTOP-G635RKF MINGW64 /d/devops/daws-88s/repos/terraform/loop (main)
+$ terraform validate
+Success! The configuration is valid.
