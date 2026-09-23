@@ -51,7 +51,7 @@ variable "sg_tags"{
     default = {
         Name = "allow-all-terraform"
         Project = "roboshop"
-        Terrafoem = "true"
+        Terraform = "true"
         Environment = "dev"
     }
 }
